@@ -1,14 +1,17 @@
-import reactlogo from '../images/react-logo.png'
+import reactLogo from '../images/react-logo.png'
 
 const Scrimba = () => {
   
   return (
     <div>
-        <div>
-           <img className='reactLogo' src={reactlogo} alt="reactlogo"/>
-        </div>
-        <h1>Fun Facts About React</h1>
+        <header>
+            <nav>
+              <img className='reactLogo' src={reactLogo} alt="reactlogo"/>
+            </nav>
+        </header>
 
+        <h1>Fun Facts About React</h1>
+     
         <ul>
           <li>Was released in 2013</li>
           <li>Was originally created by Jordan Walke</li>
@@ -16,8 +19,14 @@ const Scrimba = () => {
           <li>Is maintaned by Facebook</li>
           <li>Powers thousands of enterpise apps, including mobile apps</li>
         </ul>
+
+        <footer>
+            <p>© 20xx Jam development. All rights reserved.</p>
+        </footer>
     </div> 
   )
 }
 
 export default Scrimba
+
+// racfe
