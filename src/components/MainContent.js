@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Scrimba = () => {
+const MainContent = () => {
   
   return (
     <div>
@@ -17,6 +17,6 @@ const Scrimba = () => {
   )
 }
 
-export default Scrimba
+export default MainContent
 
 // racfe
