@@ -10,6 +10,7 @@ html {
 
 body {
   margin: 0 0 100px; /* bottom = footer height */
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -49,6 +50,12 @@ footer {
 }
 
 
+/* Tags */
+h1 {
+  font-family: 'Lato', sans-serif;
+}
+
+
 
 /* Main Content */
 .mainContent {
@@ -57,3 +64,12 @@ footer {
 
 
 /* Footer */
+
+
+
+
+/* Fonts */
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+ */
