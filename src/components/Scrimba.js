@@ -1,15 +1,9 @@
-import reactLogo from '../images/react-logo.png'
+import React from 'react'
 
 const Scrimba = () => {
   
   return (
     <div>
-        <header>
-            <nav>
-              <img className='reactLogo' src={reactLogo} alt="reactlogo"/>
-            </nav>
-        </header>
-
         <h1>Fun Facts About React</h1>
      
         <ul>
@@ -19,10 +13,6 @@ const Scrimba = () => {
           <li>Is maintaned by Facebook</li>
           <li>Powers thousands of enterpise apps, including mobile apps</li>
         </ul>
-
-        <footer>
-            <p>© 20xx Jam development. All rights reserved.</p>
-        </footer>
     </div> 
   )
 }
