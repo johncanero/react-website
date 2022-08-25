@@ -66,6 +66,10 @@ nav > img {
 
 /* Main Content */
 main {
+  background-image: url(./images/mainLogo.png);
+  background-repeat: no-repeat;
+  background-size: 350px;
+  background-position: right 75%;
   padding: 57px 27px;
   color: #fff;
 }
