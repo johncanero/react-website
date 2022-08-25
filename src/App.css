@@ -29,7 +29,7 @@ footer {
   height: 3em;
   width: 100%;
   text-align: center;
-  background-color: rgb(84, 198, 255);
+  background-color: #61DAFB;
 }
 
 /* Navbar */
@@ -72,7 +72,7 @@ main {
 
 .main--title {
   margin: 0;
-  font-size: 39px;
+  font-size: 40px;
   letter-spacing: -0.05em;
 }
 
