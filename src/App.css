@@ -63,13 +63,37 @@ nav > img {
 }
 
 
+/* Tablet */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+nav {
+  height: 100px;
+  padding: 30px 35px;
+}
+
+
+.nav--logo_text {
+  font-size: 1.5em;
+}
+
+.nav--title {
+   font-size: 1.5em;
+}
+
+}
+
+
 
 /* Main Content */
 main {
   background-image: url(./images/mainLogo.png);
   background-repeat: no-repeat;
-  background-size: 350px;
-  background-position: right 75%;
+  background-size: 300px;
+  background-position: right 45%;
   padding: 57px 27px;
   color: #fff;
 }
@@ -82,7 +106,7 @@ main {
 
 
 .main--facts {
-  margin-top: 46px;
+  margin-top: 23px;
   max-width: 400px;
 }
 
@@ -97,7 +121,38 @@ main {
 }
 
 
-/* Footer */
+/* Tablet */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+    main {
+      background-size: 480px;
+      background-position: right 45%;
+      padding: 57px 42px;
+    }
+
+    .main--title {
+      font-size: 45px;
+    }
+
+    .main--facts {
+      font-size: 18px;
+      margin-top: 26px;
+      max-width: 500px;
+    }
+    
+    .main--facts > li {
+      line-height: 25px;
+    }
+    
+  }
+
+
+
 
 
 
