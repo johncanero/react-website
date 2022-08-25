@@ -7,11 +7,7 @@ const Header = () => {
         <header>
             <nav className='nav'>
               <img className='navLogo' src={navLogo} alt="reactlogo"/>
-              <ul className='nav-items'>
-                  <li>Pricing</li>
-                  <li>About</li>
-                  <li>Contact</li>
-              </ul>
+              <h2>React Facts</h2>
             </nav>
         </header>
     </div>
