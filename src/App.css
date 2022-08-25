@@ -81,10 +81,42 @@ nav {
 }
 
 .nav--title {
-   font-size: 1.5em;
+   font-size: 1.3em;
+}
+
+nav > img {
+  margin-right: 0.5em;
 }
 
 }
+
+
+/* Desktop */
+@media screen 
+  and (min-device-width: 1025px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    
+    nav {
+      height: 100px;
+      padding: 30px 60px;
+    }
+
+    .nav--logo_text {
+      font-size: 1.8em;
+    }
+    
+    .nav--title {
+       font-size: 1.4em;
+    }
+
+    
+    nav > img {
+      width: 3em;
+      margin-right: 0.7em;
+    }
+}
+
 
 
 
@@ -93,7 +125,7 @@ main {
   background-image: url(./images/mainLogo.png);
   background-repeat: no-repeat;
   background-size: 300px;
-  background-position: right 45%;
+  background-position: 240px;
   padding: 57px 27px;
   color: #fff;
 }
@@ -131,7 +163,7 @@ main {
 
     main {
       background-size: 480px;
-      background-position: right 45%;
+      background-position: 530px;
       padding: 57px 42px;
     }
 
@@ -152,6 +184,34 @@ main {
   }
 
 
+
+/* Desktop */
+@media screen 
+  and (min-device-width: 1025px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    main {
+      background-size: 500px;
+      background-position: 120% 10px;
+      padding: 57px 70px;
+    }
+
+    .main--title {
+      font-size: 55px;
+    }
+
+    .main--facts {
+      font-size: 18px;
+      margin-top: 26px;
+      max-width: 500px;
+    }
+    
+    .main--facts > li {
+      line-height: 25px;
+    }
+    
+
+}
 
 
 
