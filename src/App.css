@@ -17,6 +17,7 @@ html {
 body {
   margin: 0 0 100px; /* bottom = footer height */
   font-family: 'Inter', sans-serif; 
+  background-color: #282D35;
 }
 
 
@@ -39,7 +40,6 @@ nav {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   height: 90px;
   padding: 30px 25px;
-  color: #fff;
 }
 
 .nav--logo_text, .nav-title {
@@ -52,7 +52,7 @@ nav {
   font-weight: 700;
 }
 
-.nav-title {
+.nav--title {
   color: #DEEBF8;
   font-weight: 600;
 }
@@ -65,9 +65,29 @@ nav > img {
 
 
 /* Main Content */
-.mainContent {
-  padding: 1.5em;
+main {
+  padding: 57px 27px;
+  color: #fff;
 }
+
+.main--title {
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+}
+
+
+.main--facts {
+  margin-top: 46px;
+  max-width: 400px;
+}
+
+.main--facts > li {
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+
 
 
 /* Footer */
@@ -77,3 +97,11 @@ nav > img {
 
 /* Fonts */
 /* font-family: 'Inter', sans-serif; */
+
+
+/* Default Style */
+/* font-family: 
+font-style:
+font-weight: 
+font-size:
+line-height: */
