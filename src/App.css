@@ -87,7 +87,9 @@ main {
   padding-block: 10px;
 }
 
-
+.main--facts > li::marker {
+  color: #61DAFB;
+}
 
 
 /* Footer */
