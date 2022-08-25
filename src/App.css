@@ -89,6 +89,7 @@ main {
 
 .main--facts > li::marker {
   color: #61DAFB;
+  font-size: 1.4rem;
 }
 
 
