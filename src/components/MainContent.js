@@ -11,7 +11,7 @@ const MainContent = () => {
               <li>Was released in 2013</li>
               <li>Was originally created by Jordan Walke</li>
               <li>Has well over 100k stars on Github</li>
-              <li>Is maintaned by Facebook</li>
+              <li>Is maintained by Facebook</li>
               <li>Powers thousands of enterpise apps, including mobile apps</li>
             </ul>
         </main>
