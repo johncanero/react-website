@@ -32,33 +32,34 @@ footer {
 }
 
 /* Navbar */
-.nav {
+nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  background-color: #21222A;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-  padding: 1em;
+  height: 90px;
+  padding: 30px 25px;
+  color: #fff;
 }
 
-.nav-items {
-  list-style: none;
-  display: flex;
+.nav--logo_text, .nav-title {
+  margin: 0;
 }
 
-.nav-items > li {
-  padding: 10px;
+.nav--logo_text {
+  margin-right: auto;
+  color: #61DAFB;
+  font-weight: 700;
 }
 
-
-/* NavbarLogo */
-.navLogo {
-  width: 5em;
+.nav-title {
+  color: #DEEBF8;
+  font-weight: 600;
 }
 
-
-/* Tags */
-h1 {
-  font-family: 'Inter', sans-serif;
+nav > img {
+  width: 2.5em;
+  margin-right: 0.45em;
 }
 
 
