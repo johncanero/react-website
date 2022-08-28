@@ -17,7 +17,7 @@
 
 # React Website About
 
-This is the React Website About Project. 📇 The project is made by React JS Code.🔵
+This is the React Website About Project. 🧬 The project is made by React JS Code.🔵
 This is a Scrimba Challenge Project # 1 from the Ultimate React 101 Course. I
 deciced to take the opportunity to take this course and learn about React.
 
