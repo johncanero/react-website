@@ -1,26 +1,20 @@
-
 * {
   box-sizing: border-box;
 }
 
-
 html {
   margin: 0;
   padding: 0px;
-
   /* Sticky Footer */
   position: relative;
   min-height: 100%;
 }
 
-
 body {
   margin: 0 0 100px; /* bottom = footer height */
-  font-family: 'Inter', sans-serif; 
-  background-color: #282D35;
+  font-family: "Inter", sans-serif;
+  /* background-color: #282D35; */
 }
-
-
 
 footer {
   position: absolute;
@@ -29,116 +23,129 @@ footer {
   height: 3em;
   width: 100%;
   text-align: center;
-  background-color: #61DAFB;
+  background-color: #61dafb;
 }
 
 /* Navbar */
 nav {
   display: flex;
   align-items: center;
-  background-color: #21222A;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-  height: 90px;
+  background-color: #ffffff;
   padding: 30px 25px;
+  height: 60px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
 }
 
-.nav--logo_text, .nav-title {
-  margin: 0;
+nav.dark {
+  background-color: #21222a;
+}
+
+.nav--logo_icon {
+  width: 30px;
+  margin-right: 10px;
 }
 
 .nav--logo_text {
+  color: #61dafb;
   margin-right: auto;
-  color: #61DAFB;
-  font-weight: 700;
 }
 
 .nav--title {
-  color: #DEEBF8;
+  color: #deebf8;
+}
+
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 0.625rem;
   font-weight: 600;
 }
 
-nav > img {
-  width: 2.5em;
-  margin-right: 0.45em;
+.toggler--slider {
+  width: 25px;
+  height: 13px;
+  background-color: #2b283a;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
 }
 
-
-/* Tablet */
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-nav {
-  height: 100px;
-  padding: 30px 35px;
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #f5f5f5;
 }
 
-
-.nav--logo_text {
-  font-size: 1.5em;
+.toggler--slider--circle {
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border-radius: 50%;
 }
 
-.nav--title {
-   font-size: 1.3em;
+nav.dark .toggler--slider--circle {
+  background-color: black;
 }
 
-nav > img {
-  margin-right: 0.5em;
+.toggler--light {
+  color: #2b283a;
 }
 
+nav.dark .toggler--light {
+  color: #918e9b;
 }
 
-
-/* Desktop */
-@media screen 
-  and (min-device-width: 1025px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-
-    
-    nav {
-      height: 100px;
-      padding: 30px 60px;
-    }
-
-    .nav--logo_text {
-      font-size: 1.8em;
-    }
-    
-    .nav--title {
-       font-size: 1.4em;
-    }
-
-    
-    nav > img {
-      width: 3em;
-      margin-right: 0.7em;
-    }
+.toggler--dark {
+  color: #d5d4d8;
 }
 
+nav.dark .toggler-dark {
+  color: #ffffff;
+}
 
+nav.dark .toggler--slider {
+  justify-content: flex-end;
+}
 
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
-/* Main Content */
+/* Mobile - Main Content */
 main {
-  background-image: url(./images/mainLogo.png);
-  background-repeat: no-repeat;
-  background-size: 300px;
-  background-position: 240px;
   padding: 57px 27px;
-  color: #fff;
+  background-image: url(./images/mainLogo.png); 
+  background-repeat: no-repeat;
+  background-position: right center;
+  flex: 1 1 auto;
+  background-color: white;
+  color: #2B283A;
+}
+
+main.dark {
+  background-image: url("./images/mainLogo.png"); 
+  background-color: #282D35;
+  color: white;    
 }
 
 .main--title {
   margin: 0;
-  font-size: 40px;
+  font-size: 39px;
   letter-spacing: -0.05em;
 }
 
-
 .main--facts {
-  margin-top: 23px;
+  margin-top: 46px;
   max-width: 400px;
 }
 
@@ -148,82 +155,98 @@ main {
 }
 
 .main--facts > li::marker {
-  color: #61DAFB;
   font-size: 1.4rem;
+  color: #61DAFB;
 }
 
 
 /* Tablet */
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-
-    main {
-      background-size: 480px;
-      background-position: 530px;
-      padding: 57px 42px;
-    }
-
-    .main--title {
-      font-size: 45px;
-    }
-
-    .main--facts {
-      font-size: 18px;
-      margin-top: 26px;
-      max-width: 500px;
-    }
-    
-    .main--facts > li {
-      line-height: 25px;
-    }
-    
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  nav {
+    height: 100px;
+    padding: 30px 35px;
   }
 
+  .nav--logo_text {
+    font-size: 1.5em;
+  }
 
+  .nav--title {
+    font-size: 1.3em;
+  }
+
+  nav > img {
+    margin-right: 0.5em;
+  }
+}
 
 /* Desktop */
-@media screen 
-  and (min-device-width: 1025px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+@media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+  nav {
+    height: 100px;
+    padding: 30px 60px;
+  }
 
-    main {
-      background-size: 500px;
-      background-position: 120% 10px;
-      padding: 57px 70px;
-    }
+  .nav--logo_text {
+    font-size: 1.8em;
+  }
 
-    .main--title {
-      font-size: 55px;
-    }
+  .nav--title {
+    font-size: 1.4em;
+  }
 
-    .main--facts {
-      font-size: 18px;
-      margin-top: 26px;
-      max-width: 500px;
-    }
-    
-    .main--facts > li {
-      line-height: 25px;
-    }
-    
-
+  nav > img {
+    width: 3em;
+    margin-right: 0.7em;
+  }
 }
 
 
 
+/* Tablet */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  main {
+    background-size: 480px;
+    background-position: 530px;
+    padding: 57px 42px;
+  }
 
+  .main--title {
+    font-size: 45px;
+  }
 
-/* Fonts */
-/* font-family: 'Inter', sans-serif; */
+  .main--facts {
+    font-size: 18px;
+    margin-top: 26px;
+    max-width: 500px;
+  }
 
+  .main--facts > li {
+    line-height: 25px;
+  }
+}
 
-/* Default Style */
-/* font-family: 
-font-style:
-font-weight: 
-font-size:
-line-height: */
+/* Desktop */
+@media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+  main {
+    background-size: 500px;
+    background-position: 120% 10px;
+    padding: 57px 70px;
+  }
+
+  .main--title {
+    font-size: 55px;
+  }
+
+  .main--facts {
+    font-size: 18px;
+    margin-top: 26px;
+    max-width: 500px;
+  }
+
+  .main--facts > li {
+    line-height: 25px;
+  }
+}
