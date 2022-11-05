@@ -19,7 +19,7 @@ body {
 footer {
   position: absolute;
   left: 0;
-  bottom: 0;
+  /* bottom: 0; */
   height: 3em;
   width: 100%;
   text-align: center;
@@ -126,6 +126,7 @@ main {
   padding: 57px 27px;
   min-height: 600px;
   height: 700px;
+  margin-bottom: 0px;
   background-image: url("./images/mainLogo.png"); 
   background-repeat: no-repeat;
   background-position: right center;
