@@ -13,6 +13,7 @@ html {
 body {
   margin: 0 0 100px; 
   font-family: "Inter", sans-serif;
+  
 }
 
 footer {
@@ -28,8 +29,8 @@ footer {
 /* Navbar */
 nav {
   display: flex;
-  align-items: center;
   background-color: #ffffff;
+  align-items: center;
   padding: 30px 25px;
   height: 60px;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
@@ -60,12 +61,12 @@ nav.dark {
 }
 
 .toggler p {
-  font-size: 0.625rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
 .toggler--slider {
-  width: 25px;
+  width: 30px;
   height: 13px;
   background-color: #2b283a;
   border-radius: 2rem;
@@ -123,7 +124,9 @@ nav.dark .toggler--slider {
 /* Mobile - Main Content */
 main {
   padding: 57px 27px;
-  background-image: url(./images/mainLogo.png); 
+  min-height: 600px;
+  height: 700px;
+  background-image: url("./images/mainLogo.png"); 
   background-repeat: no-repeat;
   background-position: right center;
   flex: 1 1 auto;
@@ -132,9 +135,7 @@ main {
 }
 
 main.dark {
-  background-image: url("./images/mainLogo.png"); 
-  background-color: #282D35;
-  
+  background-color: #282D35;  
   color: white;    
 }
 
