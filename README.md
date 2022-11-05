@@ -17,9 +17,8 @@
 
 # React Website About
 
-This is the React Website About Project. 🧬 The project is made by React JS Code.🔵
-This is a Scrimba Challenge Project # 1 from the Ultimate React 101 Course. I
-deciced to take the opportunity to take this course and learn about React.
+This is the React Website About Project. 🧬 The project is made by React JS Code and with update dark mode feature.🔵
+This is a Scrimba Challenge Project # 1 from the Ultimate React 101 Course. 
 
 React Website About: John Cañero
 Guide by Scrimba
@@ -27,7 +26,7 @@ Guide by Scrimba
 
 ## Website
 
-🖥️ [https://helpful-pika-bad6ad.netlify.app/]
+🖥️ [https://react-website-by-johncanero.vercel.app/]
 
 ✍️ Project by John Cañero
 
