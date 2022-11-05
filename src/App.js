@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState } from 'react';
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
-  const [darkMode, setDarkMode] = React.useState(true);
+  const [darkMode, setDarkMode] = useState(true);
 
-  function toggleDarkMode() {
+  const toggleDarkMode = () => {
     setDarkMode((prevMode) => !prevMode);
   }
 
